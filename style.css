@@ -1,0 +1,78 @@
+body
+{
+	font-family: 'Lato', sans-serif;
+	margin: 0px;
+	background: repeat url("geometry.png");
+}
+
+#header
+{
+	border-bottom: dashed 1px #A0A0A0;
+	padding: 5px;
+}
+
+#title
+{
+	font-size: 22pt;
+}
+
+#linkbar
+{
+	font-size: 12pt;
+}
+
+.section
+{
+	border-bottom: dashed 1px #A0A0A0;
+	padding: 5px;
+}
+
+table
+{
+	border: 1px solid black;
+	width: 800px;
+	border-collapse: collapse;
+}
+
+th
+{
+	background-color: #aaa;
+	border-collapse: collapse;
+}
+
+td
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.winner
+{
+	background-color: #64FF30;
+}
+
+.loser 
+{
+	background-color: red;
+}
+
+h3
+{
+	margin: 0px;
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom:0px;
+}
+
+.text {
+	width: 800px;
+}
+
+form {
+	margin: 0px;
+}
