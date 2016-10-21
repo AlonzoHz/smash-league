@@ -3,9 +3,9 @@ The Smash League framework is a PHP/SQL based web application that formats and a
 ##Installation Notes
 All of the files are avaiable, but some editing needs to be done before they are completely ready to interface with a server. 
 
-1. Put the database connection information in both of the connect.php files: the one in inc and in admin. 
+1. Put the database connection information in admin/inc/connect.php.
 
-2. Download [JpGraph](http://jpgraph.net/download/) and place the files in both inc and admin. 
+2. Download [JpGraph](http://jpgraph.net/download/) and place the files in admin/inc/. 
 
 3. Create the proper table structure within your SQL database (more specific outline later)
 

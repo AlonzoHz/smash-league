@@ -11,10 +11,10 @@
 	<body>
 		<a href="index.php">Return to index</a> <br/>
 		<?php
-			include 'connect.php';
-			include '../inc/nested_query.php';
+			include 'inc/connect.php';
+			include 'inc/nested_query.php';
 			
-			require 'Rating.php';
+			require 'inc/Rating.php';
 			
 			if (isset($_POST['upto']))
 			{

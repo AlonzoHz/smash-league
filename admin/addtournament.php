@@ -11,7 +11,7 @@
 	<body>
 		<a href="index.php">Return to index</a> <br/>
 		<?php
-			include 'connect.php';
+			include 'inc/connect.php';
 			
 			if (isset($_POST['name']))
 			{

@@ -1,5 +1,4 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,9 +10,9 @@
 	<body>
 		<a href="index.php">Return to index</a> <br/>
 		<?php
-			include 'connect.php';
+			include 'inc/connect.php';
 			
-			require 'Rating.php';
+			require 'inc/Rating.php';
 			
 			if (isset($_POST['winner']))
 			{

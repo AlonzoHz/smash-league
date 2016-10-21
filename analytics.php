@@ -1,10 +1,10 @@
 <?php
-	include 'inc/connect.php';
-	include 'inc/nested_query.php';
+	include 'admin/inc/connect.php';
+	include 'admin/inc/nested_query.php';
 	
-	require 'admin/Rating.php';
-	require 'inc/jpgraph/jpgraph.php';
-	require 'inc/jpgraph/jpgraph_scatter.php';
+	require 'admin/inc/Rating.php';
+	require 'admin/inc/jpgraph/jpgraph.php';
+	require 'admin/inc/jpgraph/jpgraph_scatter.php';
 ?>
 <html>
 	<head>
@@ -20,7 +20,7 @@
 		<!--<div>-->
 			<form action="analytics.php" method="post">
 				<?php
-					include 'inc/header.php';
+					include 'admin/inc/header.php';
 					
 					echo "<div class='section'>";
 					echo "<h3>Query</h3>";

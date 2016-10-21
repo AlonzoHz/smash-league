@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <?php
-	include 'inc/connect.php';
+	include 'admin/inc/connect.php';
 	
-	include 'inc/nested_query.php';
+	include 'admin/inc/nested_query.php';
 ?>
 
 <html>
@@ -16,7 +16,7 @@
 	
 	<body>
 		<?php
-			include 'inc/header.php';
+			include 'admin/inc/header.php';
 		
 			echo '<div class="section">';
 			echo '<h3>Power Rankings</h3>';

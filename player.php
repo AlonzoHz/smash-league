@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <?php
-	include 'inc/connect.php';
+	include 'admin/inc/connect.php';
 	
-	include 'inc/nested_query.php';
+	include 'admin/inc/nested_query.php';
 ?>
 
 <html>
@@ -18,7 +18,7 @@
 		<a href="/smash/">Return to home page</a>
 		
 		<?php
-			include 'inc/header.php';
+			include 'admin/inc/header.php';
 		
 			$player_id = 1;
 			if (isset($_GET['id'])) {

@@ -9,7 +9,7 @@
 	<body>
 		<a href="/smash/">Return to home page</a>
 		<?php
-			include 'inc/header.php';
+			include 'admin/inc/header.php';
 		?>
 	
 		<div class="section">
