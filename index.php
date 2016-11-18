@@ -4,13 +4,15 @@
 	include 'admin/inc/connect.php';
 	
 	include 'admin/inc/nested_query.php';
+
+    $config = include 'admin/config.php';
 ?>
 
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<title>GSMST Smash League</title>
+		<title><?php echo $config['leaguename'];?></title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
@@ -122,21 +124,6 @@
 					$i++;
 				}	
 			}
-			
-			
-			//$query = "SELECT * FROM tournament ORDER BY date DESC LIMIT 10";
-			//if($query_run = mysqli_query($con, $query)) {
-			//	while($query_row = mysqli_fetch_assoc($query_run)) {
-			//		
-			//		echo '<div class="section">';
-			//
-			//		<h3>Smash Weeklies 1</h3>
-			//		<em>Hosted by:</em> Alonzo<br/>
-			//		<em>Hosted on:</em> 2/12/16<br/>
-			//		<em>Type:</em> Invitation<br/>
-			//		<em>Winner:</em> Elliot<br/>
-			//		<em>Runner-up:</em> Alonzo<br/>
-			//}
 				
 			echo '</div>';
 			
