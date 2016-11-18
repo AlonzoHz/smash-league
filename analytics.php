@@ -311,28 +311,32 @@
 				echo "<img src='graphs/{$id}vs{$oppid}_$num.png'/>";
 				
 				if($oppid != 0) {
-					echo "<br/>$name ($screenname)'s elo has changed by $elo_won from matches with $oppname ($oppscreenname)";
-					echo "</div>";
-					
-					echo "<div class='section'>";
-					echo "<h3>Matches</h3>";
-					$matchtable = $matchtable."</table>";
-					echo $matchtable;
-					echo "</div>";
-					
-					echo "<div class='section'>";
-					echo "<h3>Matchups</h3>";
-					echo "$name ($screenname) has $winsversusopp wins and $lossesversusopp losses against $oppname ($oppscreenname)<br/>";
-					
-					foreach($mapsplayed as $mapindex)
-					{
-						$winsonmap = $mapsrecord[$mapindex]["wins"];
-						$lossesonmap = $mapsrecord[$mapindex]["losses"];
-						
-						echo "$name ($screenname) has $winsonmap wins and $lossesonmap losses on <strong>$mapindex</strong> against $oppname ($oppscreenname)<br/>";
-					}
-					
-					echo "</div>";
+                    if(!($winsversusopp + $lossesversusopp == 0)) {
+                        echo "<br/>$name ($screenname)'s elo has changed by $elo_won from matches with $oppname ($oppscreenname)";
+                        echo "</div>";
+                        
+                        echo "<div class='section'>";
+                        echo "<h3>Matches</h3>";
+                        $matchtable = $matchtable."</table>";
+                        echo $matchtable;
+                        echo "</div>";
+                        
+                        echo "<div class='section'>";
+                        echo "<h3>Matchups</h3>";
+                        echo "$name ($screenname) has $winsversusopp wins and $lossesversusopp losses against $oppname ($oppscreenname)<br/>";
+                        
+                        foreach($mapsplayed as $mapindex)
+                        {
+                            $winsonmap = $mapsrecord[$mapindex]["wins"];
+                            $lossesonmap = $mapsrecord[$mapindex]["losses"];
+                            
+                            echo "$name ($screenname) has $winsonmap wins and $lossesonmap losses on <strong>$mapindex</strong> against $oppname ($oppscreenname)<br/>";
+                        }
+                        
+                        echo "</div>";
+                    } else {
+                        echo "These players have never faced eachother.</div>";
+                    }
 				} else {
 					echo "</div>";
 					
