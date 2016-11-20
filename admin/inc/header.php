@@ -1,6 +1,5 @@
 <?php
-    include "../config.php";
-
+    $config = include 'config.php';
     $title = $config['leaguename'];
 	echo 
 		"<div id='header'>

@@ -5,12 +5,14 @@
 	require 'admin/inc/Rating.php';
 	require 'admin/inc/jpgraph/jpgraph.php';
 	require 'admin/inc/jpgraph/jpgraph_scatter.php';
+
+    $config = include 'admin/inc/config.php';
 ?>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<title>GSMST Smash League</title>
+		<title><?php echo $config['leaguename'];?></title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
@@ -335,7 +337,7 @@
                         
                         echo "</div>";
                     } else {
-                        echo "These players have never faced eachother.</div>";
+                        echo "<br/>These players have never faced eachother.</div>";
                     }
 				} else {
 					echo "</div>";

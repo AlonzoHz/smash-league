@@ -4,13 +4,15 @@
 	include 'admin/inc/connect.php';
 	
 	include 'admin/inc/nested_query.php';
+
+    $config = include 'admin/inc/config.php';
 ?>
 
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<title>GSMST Smash League</title>
+		<title><?php echo $config['leaguename'];?></title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
