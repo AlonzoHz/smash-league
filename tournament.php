@@ -17,7 +17,7 @@
 	</head>
 	
 	<body>
-		<a href="/smash/">Return to home page</a>
+		<a href="index.php">Return to home page</a>
 		
 		<?php
 			include 'admin/inc/header.php';
