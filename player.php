@@ -13,7 +13,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<title><?php echo $config['leaguename'];?></title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" <?php echo "href='admin/themes/" . $config['theme'] . "/style.css'";?>>
 	</head>
 	
 	<body>
