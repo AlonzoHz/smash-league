@@ -6,7 +6,7 @@
 	require 'admin/inc/jpgraph/jpgraph.php';
 	require 'admin/inc/jpgraph/jpgraph_scatter.php';
 
-    $config = include 'admin/inc/config.php';
+    include 'admin/inc/config.php';
 ?>
 <html>
 	<head>

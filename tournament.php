@@ -5,7 +5,7 @@
 	
 	include 'admin/inc/nested_query.php';
 
-    $config = include 'admin/inc/config.php';
+    include 'admin/inc/config.php';
 ?>
 
 <html>

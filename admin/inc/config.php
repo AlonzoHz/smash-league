@@ -1,6 +1,4 @@
 <?php
-	return array(
-        'leaguename' => 'Smash League',
-        'theme' => 'melee',
-    );
+	$str = file_get_contents("config/config.json", true);
+    $config = json_decode($str, true);
 ?>
