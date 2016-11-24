@@ -40,7 +40,7 @@
 				$sub_query = "SELECT name, screenname FROM players WHERE id=$host";
 				if($sub_result = mysqli_query($con, $sub_query)) {
 					$hname = func_mysqli_result($sub_result, 0, "name");
-					$hscreename = func_mysqli_result($sub_result, 0, "screenname");
+					$hscreenname = func_mysqli_result($sub_result, 0, "screenname");
 				}
 				
 				echo "<tr><td>$name</td><td>$date</td><td>$hname ($hscreenname)</td><td></td></tr>";
