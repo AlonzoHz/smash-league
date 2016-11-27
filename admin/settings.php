@@ -6,6 +6,7 @@
                 $new_config = array (
                     'leaguename' => $_POST['leaguename'],
                     'theme' => $_POST['theme'],
+                    'rankThreshold' => $_POST['rankThreshold'],
                 );
                 file_put_contents($path, json_encode($new_config));
             }
@@ -17,6 +18,8 @@
             <input type="text" name="leaguename" <?php echo "value='".$config['leaguename']."'";?>><br/>
             Theme: 
             <input type="text" name="theme" <?php echo "value='".$config['theme']."'";?>><br/>
+            Match threshold for unranked players (exclusive): 
+            <input type="number" name="rankThreshold" <?php echo "value='".$config['rankThreshold']."'";?>><br/>
             <input type="submit" value="submit">
         </form>
     </body>

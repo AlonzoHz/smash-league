@@ -1,4 +1,5 @@
 {
     "leaguename":"Smash League",
-    "theme":"melee"
+    "theme":"melee",
+    "rankThreshold":5
 }

@@ -30,6 +30,8 @@
 			
 			$query = "SELECT * FROM players ORDER BY rating DESC, winpercent DESC, wins DESC LIMIT 50";
 			
+            $rankThreshold = $config['rankThreshold'];
+
 			$rank = 1;
 			if($query_run = mysqli_query($con, $query)) {
 				while($query_row = mysqli_fetch_assoc($query_run)) {
@@ -44,7 +46,7 @@
 					$winpercent= $query_row['winpercent'];
 					$rating = $query_row['rating'];
 					
-					if($wins + $loses > 5)
+					if($wins + $loses >= $rankThreshold)
 					{
 						echo '<tr><td>'.$rank.'</td><td><a href="player.php?id='.$id.'">'.$name.' ('.$screenname.')</a></td><td><img src="charicons/'.$main.'.png" alt="'.$main.'"/></td><td>'.$wins.'</td><td>'.$loses.'</td><td>'.$kos.'</td><td>'.$falls.'</td><td>'.$winpercent.'</td><td>'.$rating.'</td></tr>';
 						$rank++;
@@ -56,9 +58,11 @@
 			
 			echo '</table><br/>';
 			
-			$unranked_table = $unranked_table."</table>";
-			echo "Unranked players: (Fewer than six matches) <br/>";
-			echo $unranked_table;
+            if ($rankThreshold > 0) { 
+                $unranked_table = $unranked_table."</table>";
+                echo "Unranked players: (Fewer than $rankThreshold matches) <br/>";
+                echo $unranked_table;
+            }
 			
 			echo '</div>';
 			
