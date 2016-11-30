@@ -6,7 +6,6 @@
                 include 'inc/nested_query.php';
                 $username = $_POST['username'];
                 $query = "SELECT * FROM users WHERE username='$username'";
-                echo $username;
                 if ($result = mysqli_query($con, $query)) {
 					$password = func_mysqli_result($result, 0, "password");
                     if (password_verify($_POST['password'], $password)) {

@@ -1,5 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
+<?php
+    include 'inc/logged_in.php';
+    if (!loggedIn()) {
+        header('Location: login.php');
+    }
+?>
+
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
