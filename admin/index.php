@@ -2,9 +2,6 @@
 
 <?php
     include 'inc/logged_in.php';
-    if (!loggedIn()) {
-        header('Location: login.php');
-    }
 ?>
 
 <html>

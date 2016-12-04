@@ -11,8 +11,6 @@
                     if (password_verify($_POST['password'], $password)) {
                         session_start();
                         $_SESSION['username'] = $username;
-                        header('Location: index.php');
-                        exit();
                     }
                 }
                 
