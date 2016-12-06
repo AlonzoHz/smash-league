@@ -1,3 +1,7 @@
+<?php
+    include 'inc/logged_in.php';
+?>
+
 <html>
     <body>
         <?php

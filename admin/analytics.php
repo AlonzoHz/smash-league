@@ -1,4 +1,5 @@
 <?php
+    include 'inc/logged_in.php';
 	include 'inc/connect.php';
 	include 'inc/nested_query.php';
 	
