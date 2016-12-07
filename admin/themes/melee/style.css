@@ -76,3 +76,24 @@ h3
 form {
 	margin: 0px;
 }
+
+.form {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px;
+}
+.form-elements {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
