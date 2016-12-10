@@ -18,6 +18,7 @@
 		<a href="addmatch.php">Add a new match</a> <br/>
 		<a href="refactor.php">Refactor</a> <br/>
 		<a href="history.php">Historical records of ratings</a> <br/>
+		<a href="settings.php">Settings</a> <br/>
 		<a href="..">Return to public page</a> <br/>
 	</body>
 </html>
