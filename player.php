@@ -53,36 +53,36 @@
 			echo '</table>';
 			echo '</div>';
 			
-			echo '<div class="section">';
-			echo '<h3>Tournament Placings</h3>';
-			echo '<table>';
-			echo '<tr><th>Tournament</th><th>Date</th><th>Place</th></tr>';
+			//echo '<div class="section">';
+			//echo '<h3>Tournament Placings</h3>';
+			//echo '<table>';
+			//echo '<tr><th>Tournament</th><th>Date</th><th>Place</th></tr>';
 			
-			$query = "SELECT * FROM tournamentplayer WHERE player=$player_id";
+			//$query = "SELECT * FROM tournamentplayer WHERE player=$player_id";
 			
-			if($result = mysqli_query($con, $query)){
-				$num = mysqli_num_rows($result);
-				$i = 0;
+			//if($result = mysqli_query($con, $query)){
+			//	$num = mysqli_num_rows($result);
+			//	$i = 0;
 				
-				while($i < $num) {
-					$tournament_id = func_mysqli_result($result, $i, "tournament");
-					$place = func_mysqli_result($result, $i, "place");
+			//	while($i < $num) {
+			//		$tournament_id = func_mysqli_result($result, $i, "tournament");
+			//		$place = func_mysqli_result($result, $i, "place");
 					
-					//find the tournament matching the id
-					$sub_query = "SELECT name, date FROM tournaments WHERE id=$tournament_id";
-					if($sub_result = mysqli_query($con, $sub_query)) {
-						$tournament_name = func_mysqli_result($sub_result, 0, "name");
-						$tournament_date = func_mysqli_result($sub_result, 0, "date");
-						
-						echo "<tr><td>$tournament_name</td><td>$tournament_date</td><td>$place</td></tr>";
-					}
-					
-					$i++;
-				}
-			}
+			//		//find the tournament matching the id
+			//		$sub_query = "SELECT name, date FROM tournaments WHERE id=$tournament_id";
+			//		if($sub_result = mysqli_query($con, $sub_query)) {
+			//			$tournament_name = func_mysqli_result($sub_result, 0, "name");
+			//			$tournament_date = func_mysqli_result($sub_result, 0, "date");
+			//			
+			//			echo "<tr><td>$tournament_name</td><td>$tournament_date</td><td>$place</td></tr>";
+			//		}
+			//		
+			//		$i++;
+			//	}
+			//}
 			
-			echo '</table>';			
-			echo '</div>';
+			//echo '</table>';			
+			//echo '</div>';
 			
 			echo '<div class="section">';
 			echo '<h3>Matches</h3>';
