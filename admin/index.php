@@ -13,12 +13,15 @@
 	</head>
 	
 	<body>
+        <?php echo "Welcome $username!<br/>"?>
 		<a href="addplayer.php">Add a new player</a> <br/>
 		<a href="addtournament.php">Add a new tournament</a> <br/>
 		<a href="addmatch.php">Add a new match</a> <br/>
 		<a href="refactor.php">Refactor</a> <br/>
 		<a href="history.php">Historical records of ratings</a> <br/>
 		<a href="settings.php">Settings</a> <br/>
+		<a href="adduser.php">Add an administrative user</a> <br/>
+		<a href="logout.php">Logout</a> <br/>
 		<a href="..">Return to public page</a> <br/>
 	</body>
 </html>
