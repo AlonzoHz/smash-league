@@ -26,8 +26,8 @@
                 $query = "SELECT * FROM users WHERE username='$username'";
                 if ($result = mysqli_query($con, $query)) {
                     $num = mysqli_num_rows($result);
-                    if ($num < 0 ) {
-                        $query1 = "INSERT INTO users (username, password) VALUES ($username, $password)";
+                    if ($num <= 0) {
+                        $query1 = "INSERT INTO `users` (`username`, `password`) VALUES ('$username', '$password')";
                         
                         if (mysqli_query($con, $query1)) {
                             echo "New user $username created!";
